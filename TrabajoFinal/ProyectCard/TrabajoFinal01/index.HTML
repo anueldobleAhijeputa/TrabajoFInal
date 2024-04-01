@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <style>
+        
+        .container {
+            text-align: center;
+            margin-bottom: 50px; 
+        }
+        
+        .slider {
+            width: 80%;
+            height: 300px;
+            background-color: #1d09f5;
+            margin: 0 auto 20px;
+        }
+        
+        nav {
+            background-color: #0f45f4;
+            color: #1408fb;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        
+        .formulario {
+            display: none;
+        }
+        
+        .mostrar {
+            display: block;
+        }
+        
+        .botones {
+            margin-top: 30px;
+        }
+        
+        .imagen-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin: 20px auto;
+            max-width: 80%;
+        }
+        .imagen-grid img {
+            width: 100%;
+            height: auto;
+        }
+        .anuncio textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button onclick="mostrarForm('registro')">Registrarse</button></li>
+            <li><button onclick="mostrarForm('inicio-sesion')">Iniciar Sesión</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="slider">
+            
+        </div>
+
+        <div id="registro" class="formulario">
+            <h2>Registrarse</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]+" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+
+        <div id="inicio-sesion" class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="post">
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email-login" required><br><br>
+                <label for="password-login">Contraseña:</label>
+                <input type="password" id="password-login" name="password-login" required><br><br>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+
+   
+    <div class="imagen-grid">
+        <img src="../Img/GGLSQN5WTBC5ZEENTW3CICPF4E.avif" alt="Imagen 1">
+        <img src="../Img/ft.avif" alt="Imagen 2">
+        <img src="../Img/nsc-master-r1250gs-adventure-P0N2E_2560x1440.jpg.asset.1709029764213.avif" alt="Imagen 3">
+    </div>
+
+  
+
+    <script>
+        function mostrarForm(id) {
+           
+            var formularios = document.querySelectorAll('.formulario');
+            formularios.forEach(function(formulario) {
+                formulario.classList.remove('mostrar');
+            });
+
+            
+            var formularioMostrar = document.getElementById(id);
+            formularioMostrar.classList.add('mostrar');
+        }
+    </script>
+</body>
+</html>
+
+ 

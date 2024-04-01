@@ -1,0 +1,145 @@
+*{
+font-family: "Anta",sans-serif;
+
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow-y: hidden;
+background-color: rgb(101, 101, 101);
+}
+
+.tag{
+    font-size: 0.9rem;
+    background-color: black;
+    border-radius: 5px;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-container{
+    background: #fff;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    height: 80%;
+    width: 30%;
+    box-shadow: 10px 10px 25px 0px #3c3c3c;
+}
+
+.img-container{
+    background-image: url("../Img/SeriesX.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 10px;
+    width: 28rem;
+    height: 66%;
+}
+
+.card-description{
+    background-color: rgb(44, 69, 70);
+    color: #fff;
+    padding-left: 20px;
+}
+
+.card-details{
+    display: flex;
+    flex-direction:column ;
+    margin-top: -20px;
+}
+
+.img-container img{
+    width: 28rem;
+
+}
+
+.stars{
+    color: yellow;
+    font-size: 1em;
+}
+
+.colors-price{
+    display: flex;
+    align-items:center ;
+    width: 70%;
+    justify-content:space-between ;
+    margin-top: -15px;
+}
+
+.colors{
+    display:flex ;
+    width: 6rem;
+    justify-content: space-between ;
+    cursor: pointer;
+}
+
+.Blue{
+    background: rgb(39, 45, 219);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.White{
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Green{
+    background: green;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Black{
+    background: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.pricing{
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old-price{
+    font-weight: 100;
+}
+
+button{
+    cursor: pointer;
+}
+
+#button{
+    background-color: black;
+}
+
+button white-button{
+    background-color: white;
+}
+
+.button-text{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.feedback{
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
